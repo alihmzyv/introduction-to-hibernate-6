@@ -1,4 +1,4 @@
-package com.alihmzyv.entity.proxy;
+package com.alihmzyv.entity.queries;
 
 import com.alihmzyv.entity.mappedsuperclass.RootIdentifiableEntity;
 import jakarta.persistence.Entity;
@@ -6,9 +6,12 @@ import jakarta.persistence.ManyToOne;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
+import java.util.Locale;
+
 import static jakarta.persistence.FetchType.LAZY;
 
 
+@ToString(exclude = "author")
 @AllArgsConstructor
 @Builder
 @NoArgsConstructor
