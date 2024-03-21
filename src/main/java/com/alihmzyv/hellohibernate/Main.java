@@ -28,7 +28,7 @@ public class Main {
 
             // query data using HQL
             sessionFactory.inSession(session -> {
-                out.println(session.createQuery("select isbn||': '||title from Book", Book.class).getSingleResult());
+                out.println(session.createQuery("select isbn||': '||title from BookWithNatualKey", Book.class).getSingleResult());
             });
 
             // query data using criteria API
