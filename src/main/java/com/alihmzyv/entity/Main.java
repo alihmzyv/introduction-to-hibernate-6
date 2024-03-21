@@ -54,7 +54,7 @@ public class Main {
 //                        .load(1L);
 
                 //flush
-                session.setHibernateFlushMode(FlushMode.COMMIT);
+//                session.setHibernateFlushMode(FlushMode.COMMIT);
 //                Name name = Name.builder()
 //                        .firstName("Ali")
 //                        .lastName("Hamzayev")
