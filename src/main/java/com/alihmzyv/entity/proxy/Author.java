@@ -1,24 +1,21 @@
-package com.alihmzyv.entity.association.onetoone.firstway;
+package com.alihmzyv.entity.proxy;
 
 import com.alihmzyv.entity.mappedsuperclass.RootIdentifiableEntity;
-import com.alihmzyv.entity.proxy.Person;
-import com.alihmzyv.hellohibernate.entity.Book;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import lombok.experimental.FieldDefaults;
 
 import java.util.Set;
 
 import static jakarta.persistence.FetchType.LAZY;
 
-@Getter
-@NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@NoArgsConstructor
+@Getter
+@FieldDefaults(level = AccessLevel.PRIVATE)
 @Entity
 public class Author extends RootIdentifiableEntity {
     String village;

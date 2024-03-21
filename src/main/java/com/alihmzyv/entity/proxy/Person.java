@@ -1,4 +1,4 @@
-package com.alihmzyv.entity.association.onetoone.firstway;
+package com.alihmzyv.entity.proxy;
 
 import com.alihmzyv.entity.embeddable.Name;
 import com.alihmzyv.entity.mappedsuperclass.RootIdentifiableEntity;
